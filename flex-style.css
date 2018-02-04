@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.subject-header {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.subject-tabs {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 45px;
+}
+
+.line-break {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #aaaaaa;
+  height: 0;
+  margin: 10px 25px;
+  width: 80%;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-align {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 45px;
+}
+
+.tab-area {
+  display: flex;
+  text-align: center;
+}
+
+.tabs {
+  background-color: #F2F2F2;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid gray;
+  font-weight: 300;
+  padding: 10px;
+  width: 250px;
+}
+
+.card {
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+}
+
+.left-card {
+  margin: 25px;
+}
+
+.right-card {
+  flex-direction: column;
+  margin: 10px;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+.image {
+ background-image: url('https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg');
+ background-position: center;
+ background-size: cover;
+ height: 305px;
+ width: 309px;
+}
+
+.card-2 {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-code {
+  background-color: #3F3244;
+  color: #F2F2F2;
+  font-weight: 300;
+  font-size: 18px;
+  height: 45px;
+  width: 325px;
+}
+
+.selected {
+  font-weight: 400;
+  background-color: white;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: none;
+}
+
+

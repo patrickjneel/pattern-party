@@ -1,3 +1,7 @@
-$('.working').on('click', () => {
-  console.log('click')
-})
+const changeClass = (event) => {
+  $('.tabs').removeClass('selected')
+  $(event.target).addClass('selected')
+}
+
+
+$('.tabs').on('click', changeClass)
