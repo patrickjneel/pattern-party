@@ -2,3 +2,39 @@
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
 }
+
+
+.subject-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.subject-tabs {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 45px;
+}
+
+.line-break {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #aaaaaa;
+  height: 0;
+  margin: 10px 25px;
+  width: 80%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-code {
+  background-color: #3F3244;
+  color: #F2F2F2;
+  font-weight: 300;
+  font-size: 18px;
+  height: 45px;
+  width: 325px;
+}
