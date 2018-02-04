@@ -83,7 +83,7 @@ p {
  width: 309px;
 }
 
-.card-2 {
+.not-shown {
   display: none;
 }
 
@@ -111,4 +111,6 @@ p {
   border-bottom: none;
 }
 
+.selected-card {
 
+}
