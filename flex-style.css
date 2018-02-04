@@ -75,12 +75,28 @@ p {
   margin: 10px 0px;
 }
 
+.image-1 {
+ background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0b/37/24/65/sandemans-new-london.jpg');
+}
+
+.image-2 {
+  background-image: url('https://cdn.londonandpartners.com/visit/london-organisations/tower-bridge/63730-640x360-tower-bridge-cam-640.jpg');
+}
+
+.image-3 {
+  background-image: url('https://cdn.londonandpartners.com/visit/london-organisations/buckingham-palace/100222-640x360-buckingham-palace-at-dusk-640.jpg');
+}
+
+.image-4 {
+  background-image: url('https://assets.londonist.com/uploads/2017/10/i875/the_dome_from_south_of_the_river_1.jpg');
+}
+
 .image {
- background-image: url('https://www.axiapayments.com/wp-content/uploads/2014/09/placeholder-square.jpg');
  background-position: center;
  background-size: cover;
  height: 305px;
  width: 309px;
+
 }
 
 .not-shown {
