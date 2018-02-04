@@ -23,7 +23,7 @@
   border-top: 1px solid #aaaaaa;
   height: 0;
   margin: 10px 25px;
-  width: 80%;
+  width: 82%;
 }
 
 .tab-container {
@@ -116,6 +116,10 @@ p {
   font-size: 18px;
   height: 45px;
   width: 325px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration-line: none;
 }
 
 .selected {
@@ -127,6 +131,3 @@ p {
   border-bottom: none;
 }
 
-.selected-card {
-
-}
