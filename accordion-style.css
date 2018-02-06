@@ -67,11 +67,28 @@
 }
 
 .right-card {
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 10px;
 }
 
+.line-break-card {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #aaaaaa;
+  height: 0;
+  margin: 5px;
+  width: 585px;
+}
+
+.card-titles {
+  font-size: 24px;
+  margin: 10px 0px;
+}
+
 p {
+  font-size: 18px;
   margin: 10px 0px;
 }
 
@@ -129,5 +146,73 @@ p {
   border-top: 1px solid gray;
   border-right: 1px solid gray;
   border-bottom: none;
+}
+
+@media only screen and (max-width: 1283px) {
+    .line-break {
+       width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1043px) {
+    .tabs {
+       width: 200px;
+    }
+
+    .card {
+      width: 800px;
+    }
+}
+
+@media only screen and (max-width: 838px) {
+    .line-break {
+       width: 50%;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .line-break {
+       width: 50%;
+    }
+
+    .tabs {
+      width: 180px;
+    }
+
+    .card {
+      width: 720px;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .tabs {
+       width: 163px;
+    }
+
+    .card {
+      width: 650px;
+    }
+}
+
+@media only screen and (max-width: 666px) {
+    .tabs {
+       width: 145px;
+    }
+
+    .card {
+      width: 580px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+      width: 0px;
+      flex-direction: column;
+    }
+
+    .image {
+      height: 185px;
+      width: 236px;
+    }
 }
 
