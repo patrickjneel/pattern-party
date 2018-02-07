@@ -28,8 +28,9 @@
 .tab-container {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
+  /*flex-direction: column;*/
 }
 
 .tab-area {
@@ -47,7 +48,7 @@
   width: 250px;
 }
 
-.plus-button {
+.minus-button {
   display: none;
 }
 
@@ -68,6 +69,7 @@
 .right-card {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 10px;
 }
@@ -78,16 +80,14 @@
   border-top: 1px solid #aaaaaa;
   height: 0;
   margin: 5px;
-  width: 585px;
+  width: 80%;
 }
 
 .card-titles {
-  font-size: 24px;
   margin: 10px 0px;
 }
 
 p {
-  font-size: 18px;
   margin: 10px 0px;
 }
 
@@ -194,19 +194,46 @@ p {
     }
 }
 
-@media only screen and (max-width: 666px) {
+@media only screen and (max-width: 673px) {
     .tabs {
-       width: 145px;
+      margin: 5px 10px;
+      flex-direction: column;
+      width: 100%;
     }
 
     .card {
       width: 580px;
     }
+
+    .subject-header {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tabs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .minus-button {
+      display: flex;
+      font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+  .card {
+    flex-direction: column;
+    margin: 5px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
     .card {
-      width: 0px;
+      width: 100%;
       flex-direction: column;
     }
 
