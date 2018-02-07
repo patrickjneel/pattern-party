@@ -18,27 +18,23 @@
 }
 
 .line-break {
-  border: none;
-  border-bottom: 1px solid #ffffff;
   border-top: 1px solid #aaaaaa;
-  height: 0;
-  margin: 10px 25px;
-  width: 82%;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 4%;
+  width: 75%;
 }
 
 .tab-container {
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-}
-
-.tab-align {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 45px;
+  /*flex-direction: column;*/
 }
 
 .tab-area {
+  align-items: center;
   display: flex;
   text-align: center;
 }
@@ -50,6 +46,10 @@
   font-weight: 300;
   padding: 10px;
   width: 250px;
+}
+
+.minus-button {
+  display: none;
 }
 
 .card {
@@ -67,8 +67,24 @@
 }
 
 .right-card {
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 10px;
+}
+
+.line-break-card {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #aaaaaa;
+  height: 0;
+  margin: 5px;
+  width: 80%;
+}
+
+.card-titles {
+  margin: 10px 0px;
 }
 
 p {
@@ -104,9 +120,10 @@ p {
 }
 
 .button-container {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 35px;
 }
 
 .view-code {
@@ -129,5 +146,100 @@ p {
   border-top: 1px solid gray;
   border-right: 1px solid gray;
   border-bottom: none;
+}
+
+@media only screen and (max-width: 1283px) {
+    .line-break {
+       width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1043px) {
+    .tabs {
+       width: 200px;
+    }
+
+    .card {
+      width: 800px;
+    }
+}
+
+@media only screen and (max-width: 838px) {
+    .line-break {
+       width: 50%;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .line-break {
+       width: 50%;
+    }
+
+    .tabs {
+      width: 180px;
+    }
+
+    .card {
+      width: 720px;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .tabs {
+       width: 163px;
+    }
+
+    .card {
+      width: 650px;
+    }
+}
+
+@media only screen and (max-width: 673px) {
+    .tabs {
+      margin: 5px 10px;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .card {
+      width: 580px;
+    }
+
+    .subject-header {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tabs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .minus-button {
+      display: flex;
+      font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+  .card {
+    flex-direction: column;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .image {
+      height: 185px;
+      width: 236px;
+    }
 }
 
