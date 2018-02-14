@@ -40,6 +40,7 @@ header {
   font-size: 20px;
   font-weight: 600;
   padding-right: 120px;
+  padding-top: 10px;
 }
 
 .subject-header {
@@ -277,7 +278,7 @@ p {
 
     .image {
       height: 185px;
-      width: 236px;
+      width: unset;
     }
 
     .name {
@@ -292,11 +293,11 @@ p {
     }
 
     .left-header {
-      
+      width: unset;
     }
 
     .right-header {
-      
+      width: unset;
     }
 
     .subject-header {
