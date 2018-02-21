@@ -62,8 +62,65 @@
 }
 
 .search-input {
+  background-image: url('./magnifier.svg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 25px 25px; 
   font-weight: 300;
+  font-size: 16px;
   height: 35px;
   margin-right: 20px;
+  text-align: center;
   width: 150px;
+}
+
+.menu {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/*.mobile-nav-show {
+  display: flex;
+  flex-direction: column;
+
+}*/
+
+@media only screen and (max-width: 1000px) {
+  .nav-links {
+    display: none;
+  }
+
+  .search-input {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+    
+}
+
+@media only screen and (max-width: 420px) {
+  .subject-header {
+      flex-direction: column;
+    }
+
+    .subject-tabs {
+      margin-left: unset;
+    }
+
+    .line-break {
+      width: 50%;
+    }
+
+    .mobile-nav-show {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
 }
