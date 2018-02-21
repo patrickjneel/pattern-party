@@ -124,4 +124,8 @@
     .line-break {
       width: 50%;
     }
+
+    .flexible-cards {
+      margin-right: unset;
+    }
 }
