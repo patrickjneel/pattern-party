@@ -9,9 +9,9 @@ const changeClass = (event) => {
 
 const showNav = () => {
   console.log('click')
-  $('.mobile-nav').hasClass(':hidden')
-  $('.mobile-nav').addClass('mobile-nav-show')
-  $('.mobile-nav').removeClass('mobile-nav-show'); 
+  $('.mobile-nav').toggleClass('mobile-nav-show')
+  // $('.mobile-container').toggleClass('mobile-nav-show')
+  // $('.mobile-nav').removeClass('mobile-nav-show'); 
 }
 
 
