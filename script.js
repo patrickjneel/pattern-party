@@ -7,5 +7,13 @@ const changeClass = (event) => {
   $(`.tabs-${$(event.target).attr('id')}`).find('.minus-button').text('-');
 }
 
+const showNav = () => {
+  console.log('click')
+  $('.mobile-nav').toggleClass('mobile-nav-show')
+  // $('.mobile-container').toggleClass('mobile-nav-show')
+  // $('.mobile-nav').removeClass('mobile-nav-show'); 
+}
+
 
 $('.tabs').on('click', changeClass)
+$('.menu').on('click', showNav)

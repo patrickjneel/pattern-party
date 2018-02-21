@@ -5,6 +5,44 @@
   padding: 0;
 }
 
+header {
+  background-color: #2F2235;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-header {
+  width: 50%;
+  margin: 15px 60px;
+}
+
+.right-header {
+  width: 50%;
+  margin: 15px 50px;
+}
+
+.pattrn {
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.party {
+  color: #34D1D1;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.name {
+  color: white;
+  float: right;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 120px;
+  padding-top: 10px;
+}
+
 .subject-header {
   display: flex;
   flex-direction: row;
@@ -45,6 +83,7 @@
   border-bottom: 1px solid gray;
   font-weight: 300;
   padding: 10px;
+  text-align: center;
   width: 250px;
 }
 
@@ -231,7 +270,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     .card {
       width: 100%;
       flex-direction: column;
@@ -239,7 +278,38 @@ p {
 
     .image {
       height: 185px;
-      width: 236px;
+      width: unset;
+    }
+
+    .name {
+      padding-right: 0px;
+      float: none;
+    }
+
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left-header {
+      width: unset;
+    }
+
+    .right-header {
+      width: unset;
+    }
+
+    .subject-header {
+      flex-direction: column;
+    }
+
+    .subject-tabs {
+      margin-left: 0px;
+    }
+
+    .line-break {
+      width: 50%;
     }
 }
 
