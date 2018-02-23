@@ -130,6 +130,12 @@ p {
   margin: 10px 0px;
 }
 
+ 
+span#4.minus-button.selected {
+  background-color: transparent;
+  border: none;
+}
+
 .image-1 {
  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0b/37/24/65/sandemans-new-london.jpg');
 }
